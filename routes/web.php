@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('student_login');
 });
+
+Route::get('admin', function () {
+    return view('admin.admin_login');
+});
+Route::post('/dashboard', 'AdminController@login_dashboard');
