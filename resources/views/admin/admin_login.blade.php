@@ -56,7 +56,7 @@
                             <a href="#"><i class="halflings-icon cog"></i></a>
                         </div>
                         <h2>Login to your account</h2>
-                        <form class="form-horizontal" action="{{ url('/dashboard') }}" method="post">
+                        <form class="form-horizontal" action="{{ url('admin-login') }}" method="post">
                             @csrf
                             <fieldset>
 

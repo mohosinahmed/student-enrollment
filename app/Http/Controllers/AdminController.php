@@ -8,11 +8,13 @@ use DB;
 
 class AdminController extends Controller
 {
-    public function login_dashboard(Request $request){
+
+
+    public function adminLogin(Request $request){
         //return view('admin.dashboard');
         
         $email = $request->admin_email;
-        $password = $request->admin_password;
+        $password = md5($request->admin_password);
         
         $result = DB::table('admin_tbl')
         ->where('admin_email', $email)
@@ -20,9 +22,15 @@ class AdminController extends Controller
         ->first();
         
         if($result){
-           echo 'wel';
+           return redirect('dashboard');  
         }else{
-            return Redirect::to('/admin');
+            return Redirect::to('admin');
+            
         }
     }
+
+    public function adminDashboard(){
+        return view('admin.dashboard');        
+    }
+
 }
