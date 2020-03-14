@@ -341,7 +341,10 @@
 						<li>
 							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> course</span><span class="label label-important">  </span></a>
 							<ul>
-								<li><a class="submenu" href="{{ url('all-students')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 1</span></a></li>
+								<li><a class="submenu" href="{{ url('cse')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> cse</span></a></li>
+								<li><a class="submenu" href="{{ url('bba')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> bba</span></a></li>
+								<li><a class="submenu" href="{{ url('eee')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> eee</span></a></li>
+								<li><a class="submenu" href="{{ url('ece')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> ece</span></a></li>
 							</ul>	
 						</li>
 						

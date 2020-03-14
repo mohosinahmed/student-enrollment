@@ -53,4 +53,31 @@ class StudentController extends Controller
 
 	}
 
+
+	public function cse(){
+		$cse_students = DB::table('students_tbl')->where('department', 1)->get();
+
+		return view('admin.cse', compact('cse_students'));
+	}
+
+	public function bba(){
+		$bba_students = DB::table('students_tbl')->where('department', 2)->get();
+
+		return view('admin.bba', compact('bba_students'));
+	}
+
+	public function eee(){
+		$eee_students = DB::table('students_tbl')->where('department', 3)->get();
+
+		return view('admin.eee', compact('eee_students'));
+	}
+
+	public function ece(){
+		$ece_students = DB::table('students_tbl')->where('department', 4)->get();
+
+		return view('admin.ece', compact('ece_students'));
+	}
+
+
+
 }

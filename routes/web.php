@@ -25,4 +25,7 @@ Route::get('add-student', 'StudentController@create');
 Route::post('add-student', 'StudentController@store');
 Route::get('all-students', 'StudentController@index');
 
-Route::get('cse', 'StudentController@index');
+Route::get('cse', 'StudentController@cse');
+Route::get('bba', 'StudentController@bba');
+Route::get('eee', 'StudentController@eee');
+Route::get('ece', 'StudentController@ece');

@@ -52,7 +52,7 @@
                     </thead>   
 
                     <tbody role="alert" aria-live="polite" aria-relevant="all">
-                        @foreach($eee_students as $student)
+                        @foreach($ece_students as $student)
                         <tr class="odd">
                             <td class="  sorting_1">{{ $student->roll}}</td>
                             <td class="  sorting_1">{{ $student->name}}</td>

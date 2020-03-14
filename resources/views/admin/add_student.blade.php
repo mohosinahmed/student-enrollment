@@ -90,7 +90,7 @@
 								<option value="1">cse</option>
 								<option value="2">bba</option>
 								<option value="3">eee</option>
-								<option value="4">cse</option>
+								<option value="4">ece</option>
 							</select>
 						</div>
 					</div>
