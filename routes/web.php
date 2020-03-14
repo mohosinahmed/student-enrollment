@@ -20,3 +20,9 @@ Route::get('admin', function () {
 });
 Route::post('admin-login', 'AdminController@adminLogin');
 Route::get('dashboard', 'AdminController@adminDashboard');
+
+Route::get('add-student', 'StudentController@create');
+Route::post('add-student', 'StudentController@store');
+Route::get('all-students', 'StudentController@index');
+
+Route::get('cse', 'StudentController@index');
